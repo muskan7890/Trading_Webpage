@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&display=swap');
+
+.helpcenter-container {
+  font-family: "Instrument Sans", sans-serif;
+  background: linear-gradient(120 deg #fff, #f1b8fa);
+  color: #341439;
+  width: 480px;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 70px;
+}
+
+/* Header */
+.helpcenter-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  border-bottom: 1px solid #eee;
+  background: #f3bafc;
+  box-shadow: 0px 2px 6px rgba(52, 20, 57, 0.1);
+}
+
+.helpcenter-header h1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Help Cards */
+.help-options {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.help-card {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 18px;
+  border-radius: 12px;
+  background: #f5f2f7;
+  box-shadow: 0 2px 6px rgba(52, 20, 57, 0.15);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.help-card:hover {
+  transform: translateY(-4px);
+}
+
+.help-card .icon {
+  background: #341439;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.help-card h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.help-card p {
+  margin: 4px 0 0;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #555;
+}
+

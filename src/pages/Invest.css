@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.invest-container {
+  font-family: "Instrument Sans", sans-serif;
+  background: linear-gradient(135deg, #e4abec, #ffffff);
+  width: 480px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* Header */
+.invest-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background: #341439;
+  color: white;
+  border-radius: 0 0 12px 12px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Tabs */
+.invest-tabs {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 0;
+}
+
+.tab {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  background: #eee;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.tab.active {
+  background: #341439;
+  color: #fff;
+}
+
+/* Plans */
+.plans-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.plan-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding: 12px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 16px rgba(0,0,0,0.1);
+}
+
+.plan-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.plan-info {
+  flex: 1;
+}
+
+.plan-info h4 {
+  font-size: 16px;
+  color: #341439;
+  margin-bottom: 4px;
+}
+
+.plan-info p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.plan-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 13px;
+  color: #333;
+}
+
+/* Buy Button */
+.buy-btn {
+  background: #28a745;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 12px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.buy-btn:hover {
+  background: #218838;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  .plan-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .plan-img {
+    width: 100%;
+    height: auto;
+  }
+  .buy-btn {
+    align-self: flex-end;
+    margin-top: 10px;
+  }
+}
+
+
+
+

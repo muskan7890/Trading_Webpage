@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&display=swap');
+
+.bill-page {
+  font-family: "Instrument Sans", sans-serif;
+  width: 480px;
+  margin: 0 auto;
+  height: 100vh;
+  background: linear-gradient(to bottom, #f1c0f8, #ffffff);
+  color: #341539;
+  padding: 20px;
+}
+
+/* Header */
+.bill-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.back-btn {
+  background: none;
+  border: 2px solid #341539;
+  color: #341539;
+  font-size: 13px;
+  padding: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.back-btn:hover {
+  background: #341539;
+  color: white;
+}
+
+/* Tabs */
+.bill-tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.bill-tabs button {
+  flex: 1;
+  margin: 0 5px;
+  padding: 10px;
+  border: none;
+  background: #f5f5f5;
+  color: #341539;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.bill-tabs button.active {
+  background: #341539;
+  color: white;
+  box-shadow: 0 0 12px rgba(52, 21, 57, 0.6);
+}
+
+/* Cards */
+.bill-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.bill-card {
+  background: #ffffff;
+  border: 1px solid rgba(52, 21, 57, 0.3);
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 15px rgba(52, 21, 57, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.bill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(52, 21, 57, 0.3);
+}
+
+.bill-info h2 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.bill-info p {
+  font-size: 12px;
+  color: #777;
+}
+
+.bill-amount {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.bill-amount.positive {
+  color: green;
+  text-shadow: 0 0 8px rgba(0, 255, 0, 0.5);
+}
+
+.bill-amount.negative {
+  color: #ff6600;
+  text-shadow: 0 0 8px rgba(255, 102, 0, 0.5);
+}
+
+.end-text {
+  text-align: center;
+  color: #777;
+  margin-top: 20px;
+  font-size: 14px;
+}
+

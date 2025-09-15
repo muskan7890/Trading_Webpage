@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap');
+
+* {
+  font-family: 'Instrument Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.recharge-container {
+  background:#ffffff;
+  background-size: 400% 400%;
+  animation: gradientBG 18s ease infinite;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+}
+
+/* Background animation */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Header with back arrow */
+.recharge-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 25px;
+  animation: slideDown 1s ease forwards;
+  opacity: 0;
+}
+
+.back-btn {
+  background: transparent;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #333;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.back-btn:hover {
+  transform: translateX(-4px);
+  color: #341539;
+}
+
+/* Recharge Box */
+.recharge-box {
+  background: #fff;
+  border-radius: 20px;
+  padding: 25px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  animation: slideUp 1.2s ease forwards;
+  opacity: 0;
+}
+
+/* Labels */
+.label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: block;
+  font-size: 15px;
+  color: #444;
+}
+
+/* Input */
+.amount-input {
+  width: 100%;
+  padding: 14px;
+  border: 2px solid #341539;
+  border-radius: 12px;
+  font-size: 16px;
+  margin-bottom: 22px;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.amount-input:focus {
+  border-color: #341539;
+  box-shadow: 0 0 6px rgba(255,152,0,0.4);
+  outline: none;
+}
+
+/* Quick Amounts */
+.quick-amounts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.quick-btn {
+  background: #fffaf0;
+  border: 2px solid #341539;
+  border-radius: 12px;
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.quick-btn:hover,
+.quick-btn.selected {
+  background: #341539;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+/* Channels */
+.channels {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.channel-btn {
+  flex: 1;
+  background: #c06fb3;
+  border: 2px solid #341539;
+  border-radius: 12px;
+  padding: 14px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.channel-btn:hover,
+.channel-btn.selected {
+  background: #341539;
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* Explain Box */
+.explain-box {
+  background: #fffaf0;
+  border-radius: 12px;
+  padding: 18px;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 22px;
+  animation: fadeIn 1.5s ease forwards;
+  opacity: 0;
+}
+
+.explain-box h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.explain-box ol {
+  padding-left: 20px;
+}
+
+/* Recharge Button */
+.recharge-btn {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(to right, #341539, #341539);
+  border: none;
+  border-radius: 14px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(255,152,0,0.4);
+}
+
+.recharge-btn:hover {
+  background: linear-gradient(to right, #c06fb3, #c06fb3);
+  transform: translateY(-2px);
+}
+
+/* Animations */
+@keyframes slideUp {
+  from { transform: translateY(40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+@keyframes slideDown {
+  from { transform: translateY(-30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

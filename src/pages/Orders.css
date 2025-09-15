@@ -1,0 +1,124 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&display=swap');
+
+* {
+  font-family: "Instrument Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.orders-page {
+  padding: 30px;
+  background: linear-gradient(145deg, #ffffff, #f2b4fc);
+  width: 480px;
+  
+}
+
+/* Header */
+.orders-header h1 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  color: #341539;
+  margin-bottom: 25px;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.tabs button {
+  padding: 10px 20px;
+  border: 2px solid #341539;
+  border-radius: 25px;
+  background: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  color: #341539;
+  transition: 0.3s;
+}
+
+.tabs button.active,
+.tabs button:hover {
+  background: #341539;
+  color: white;
+}
+
+/* Orders List */
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Order Card */
+.order-card {
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 6px 18px rgba(52, 21, 57, 0.15);
+  transition: transform 0.3s;
+}
+
+.order-card:hover {
+  transform: translateY(-5px);
+}
+
+.order-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.order-title h3 {
+  font-size: 18px;
+  color: #341539;
+}
+
+.status {
+  padding: 6px 14px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status.normal {
+  background: #e4d1f5;
+  color: #341539;
+}
+
+.status.finish {
+  background: #f6d1e4;
+  color: #7a003c;
+}
+
+.order-body p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #4b3a52;
+}
+
+/* Details Button */
+.details-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 16px;
+  background: #341539;
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.details-btn:hover {
+  background: #5a2674;
+}
