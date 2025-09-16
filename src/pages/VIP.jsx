@@ -1,4 +1,3 @@
-
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./VIP.css";
@@ -23,7 +22,6 @@ export default function VIP() {
       {/* Header */}
       <div className="vip-header">
         <button className="back-btn" onClick={() => navigate("/account")}>
-          ←
         </button>
         <h1 className="vip-title">Vip Level</h1>
       </div>
@@ -33,13 +31,14 @@ export default function VIP() {
         {levels.map((level, idx) => (
           <div key={idx} className="vip-card">
             <div className={`vip-badge ${level.className}`}>{level.id}</div>
-            <p>
+            <p className="card-description">
               His VIP level requires inviting{" "}
               <span className="highlight">0 people</span>, with a total
               investment of{" "}
               <span className="highlight">
                 ₹{level.amount.toLocaleString()}.00
-              </span>.
+              </span>
+              .
             </p>
           </div>
         ))}

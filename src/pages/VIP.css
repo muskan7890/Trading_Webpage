@@ -1,9 +1,8 @@
-* Page background */
+
 .vip-page {
   min-height: 100vh;
   width: 100vw;
-  background: #f3c6fa;
-  color: #341439;
+  background: linear-gradient(135deg, #ffffff, #f3e6ff, #dec7fd);
   padding: 12px;
   font-family: "Instrument sans", sans-serif;
   overflow-x: hidden;
@@ -11,10 +10,8 @@
 
 @media (min-width: 480px) {
   .vip-page {
-    max-width: 480px;
+    width: 480px;
     margin: auto;
-    border: 1px solid #341439;
-    border-radius: 12px;
   }
 }
 
@@ -22,116 +19,118 @@
 .vip-header {
   display: flex;
   align-items: center;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
+  padding: 10px 0;
   position: sticky;
   top: 0;
-  background: #f3c6fa;
-  padding: 10px 0;
+  background: #341439; 
   z-index: 10;
 }
-
-.back-btn {
-  background: transparent;
-  border: none;
-  color: #341439;
-  font-size: 24px;
-  margin-right: 12px;
-  cursor: pointer;
-  transition: transform 0.2s;
-}
-.back-btn:hover {
-  transform: scale(1.2);
-}
-
 .vip-title {
   font-size: 20px;
   font-weight: bold;
+  color: #ffffff; 
+  margin-left: 14px;
 }
 
 /* VIP Cards */
 .vip-cards {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+  display: grid;
+  gap: 20px; 
+  grid-template-columns: 1fr; 
+}
+
+@media (min-width: 768px) {
+  .vip-cards {
+    grid-template-columns: repeat(2, 1fr); 
+  }
 }
 
 .vip-card {
   background: #ffffff;
-  border: 2px solid #341439;
-  border-radius: 14px;
-  padding: 14px;
-  box-shadow: 0px 4px 10px rgba(52, 21, 147, 0.15);
+  border: 1px solid #341439; 
+  border-radius: 10px; 
+  padding: 16px; 
+  margin-right: 14px;
+  margin-left: 14px;
+  box-shadow: 0px 6px 15px rgba(52, 21, 147, 0.1); 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .vip-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0px 6px 16px #341439;
+  box-shadow: 0px 8px 18px #341439;
 }
 
-/* Responsive text scaling */
-.vip-card p {
-  font-size: clamp(12px, 3.5vw, 14px);
-  line-height: 1.5;
+.card-description {
+  font-size: clamp(14px, 3.5vw, 16px); 
+  line-height: 1.6; 
+  color: #333; 
 }
 
-/* Badge animations */
+/* Badge styles */
 .vip-badge {
   font-weight: bold;
-  font-size: 13px;
-  padding: 5px 10px;
+  font-size: 16px; 
+  padding: 6px 12px;
   border-radius: 8px;
   display: inline-block;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   animation: popIn 0.5s ease;
 }
 @keyframes popIn {
-  from { transform: scale(0.8); opacity: 0; }
-  to   { transform: scale(1); opacity: 1; }
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 /*unique badge colors*/
 
-.badge-v0{
-    background: #fbbf24;
-    color: #1e3a8a;
+.badge-v0 {
+  background: #fbbf24;
+  color: #1e3a8a;
 }
 
-.badge-v1{
-    background: #60a5fa;
-    color: #0c4a6e;
+.badge-v1 {
+  background: #60a5fa;
+  color: #0c4a6e;
 }
 
-.badge-v2{
-    background: #91d9fa;
-    color: #083344;
+.badge-v2 {
+  background: #91d9fa;
+  color: #083344;
 }
 
-.badge-v3{
-    background: #f59;
-    color: #064e3b;
+.badge-v3 {
+  background: #f59;
+  color: #064e3b;
 }
 
-.badge-v4{
-    background: #a855f7;
-    color: #3b0764;
+.badge-v4 {
+  background: #a855f7;
+  color: #3b0764;
 }
 
-.badge-v5{
-    background: #22c55e;
-    color: #064e3b;
+.badge-v5 {
+  background: #22c55e;
+  color: #064e3b;
 }
 
-.badge-v6{
-    background: #ef4444;
-    color: #450a0a;
+.badge-v6 {
+  background: #ef4444;
+  color: #450a0a;
 }
 
-.badge-v7{
-    background: #eab308;
-    color: #713f12;
+.badge-v7 {
+  background: #eab308;
+  color: #713f12;
 }
 
-.badge-v8{
-    background: #10b981;
-    color: #064e3b;
+.badge-v8 {
+  background: #10b981;
+  color: #064e3b;
 }
