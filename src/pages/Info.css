@@ -9,7 +9,7 @@
 
 .info-container {
   background: linear-gradient(to bottom #f6baff, #ffffff);
-  width: 480px;
+  width: 430px, auto;
   height: 100vh;
   flex-direction: column;
   align-items: center;

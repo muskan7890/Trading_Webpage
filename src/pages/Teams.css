@@ -1,19 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600&display=swap");
 
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  margin: 0;
   font-family: "Instrument Sans", sans-serif;
   background: #341439;
+  position: relative;
   color: #333;
-  display: flex;
+  margin:0 auto;
+  min-height: 100vh;
   justify-content: center;
 }
 
 /* Main container */
 .team-dashboard {
   width: 420px;
-  margin-left: 40px;
-  margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
   background: linear-gradient(120deg, #ffffff, #f7d0fd);
 }
 

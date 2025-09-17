@@ -38,16 +38,18 @@
 .wallet-card {
   background: #f8f4ff;
   border-radius: 12px;
-  padding: 18px;
-  margin: 20px auto;
+  padding: 20px;
+  margin: 0 auto;
   text-align: center;
-  width: 90%;                  
+  width: 90%;
+  max-width: 400px;                  
   box-shadow: 0 3px 10px rgba(55, 21, 147, 0.15);
 }
 
 .wallet-card h2 {
   color: #341539;
   font-size: 20px;
+  margin: 10px 0;
 }
 
 /* Buttons */
@@ -73,6 +75,7 @@
   flex-direction: column;      
   margin: 20px auto;
   width: 90%;
+  max-width: 400px;
 }
 
 .feature-box {
@@ -95,6 +98,7 @@
   border-radius: 12px;
   padding: 18px;
   width: 90%;
+  max-width: 400px;
   margin: 20px auto;
   text-align: center;
   box-shadow: 0 3px 10px rgba(55, 21, 147, 0.15);
@@ -123,6 +127,7 @@
   padding: 18px;
   text-align: center;
   width: 90%;
+  max-width: 400px;
   margin: 20px auto;
   box-shadow: 0 3px 10px rgba(55, 21, 147, 0.15);
 }
